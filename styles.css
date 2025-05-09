@@ -4,9 +4,11 @@
   padding: 0;
 }
 
-body {
+html, body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -75,8 +77,93 @@ nav form.search input[type="search"]:hover {
   outline: none;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li.nav-btn1 {
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+  border: #ffffff 2px solid;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+nav ul li.nav-btn2 {
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #4C5FD5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 150px 0 10px;
+
+}
+
+nav ul li.nav-btn2:hover {
+  background-color: #ffffff;
+}
+
 nav ul a {
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
 }
+
+/* hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadbf1;
+  width: 100%;
+  height: 40vh;
+}
+
+.hero p {
+  font-size: 80px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.hero form {
+  position: relative;
+  width: 720px;
+}
+
+.hero form input[type="search"] {
+  width: 100%;
+  height: 66px;
+  font-size: 18px;
+  padding: 0 60px 0 20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.hero form .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-55%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
