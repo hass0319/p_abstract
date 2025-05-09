@@ -111,7 +111,7 @@ nav ul li.nav-btn2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 150px 0 10px;
+  margin: 0 10px;
 
 }
 
@@ -183,23 +183,21 @@ main {
 }
 
 .container {
-  display:grid;
+  display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 80px 100px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
 }
 
-main .cards {
+.article-box .group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
 }
 
-.cards .article-box .group {
-  display: flex;
-  flex-direction: row;
-}
-
-.cards .article-box {
+.article-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -207,14 +205,14 @@ main .cards {
   height: auto;
 }
 
-.cards .article-box img {
+.article-box img {
   width: 80px;
   height: 80px;
   object-fit: contain;
   margin-right: 20px;
 }
 
-.cards .article-box  div.text1 {
+.article-box  div.text1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,7 +220,7 @@ main .cards {
   width: 200px;
   height: auto;
 }
-.cards .article-box h2 {
+.article-box h2 {
   font-size: 20px;
   font-weight: bolder;
   line-height: 1.5;
@@ -253,4 +251,119 @@ main .cards {
 
 .article-box a:hover {
   text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+}
+
+footer ul.top {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px 0;
+}
+
+footer ul.bot {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer ul.bot li{
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+footer ul li h3 {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+
+footer ul.bot li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer ul.bot li a:hover {
+  text-decoration: underline;
+}
+
+footer ul.bot li div.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+footer .foot-logo, .help{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer .foot-logo {
+  display: flex;
+  margin-top: 150px;
+  align-items: flex-start;
+}
+
+footer .foot-logo p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* .sticky-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4C5FD5;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+} */
+
+.sticky-help {
+  position: fixed;
+  width: 125px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4C5FD5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.sticky-help a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  gap: 5px;
 }
