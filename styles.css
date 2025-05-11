@@ -28,6 +28,7 @@ nav .left {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 
 nav h1 {
@@ -36,7 +37,7 @@ nav h1 {
   align-items: center;
   color: #ffffff;
   font-size: 24px;
-  margin: 0 50px;
+  margin: 0 10px;
 }
 
 nav .left .logo {
@@ -58,6 +59,11 @@ nav .left .help {
   border-left: #ffffff 2px solid;
 }
 
+.right {
+  display: flex;
+  gap: 20px;
+}
+
 nav form.search {
   display: flex;
   justify-content: center;
@@ -66,17 +72,17 @@ nav form.search {
 
 nav form.search input[type="search"] {
   width: 250px;
-  height: 50px;
+  height: 45px;
   border-radius: 5px;
   border: 1px solid #ffffff;
   padding: 20px;
   margin: 5px;
   display: flex;
   align-items: center;
+  font-size: medium;
 }
 
 nav form.search input[type="search"]:hover {
-  background-color: brown;
   outline: none;
 }
 
@@ -91,7 +97,7 @@ nav ul {
 nav ul li.nav-btn1 {
   font-size: 20px;
   width: 250px;
-  height: 50px;
+  height: 45px;
   border: #ffffff 2px solid;
   border-radius: 5px;
   background-color: #000000;
@@ -105,7 +111,7 @@ nav ul li.nav-btn1 {
 nav ul li.nav-btn2 {
   font-size: 20px;
   width: 200px;
-  height: 50px;
+  height: 45px;
   background-color: #4C5FD5;
   border-radius: 5px;
   display: flex;
@@ -115,8 +121,9 @@ nav ul li.nav-btn2 {
 
 }
 
-nav ul li.nav-btn2:hover {
+nav ul li.nav-btn2:hover,  .nav-btn2 a:hover {
   background-color: #ffffff;
+  color: #000000;
 }
 
 nav ul a {
