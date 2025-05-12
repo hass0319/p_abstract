@@ -427,7 +427,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40%;
+    height: 70px;
   }
 
   nav .left {
@@ -435,6 +435,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 0;
   }
 
   nav .right {
